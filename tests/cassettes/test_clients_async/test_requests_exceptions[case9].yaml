@@ -1,0 +1,36 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - httpbin.org
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: https://httpbin.org/status/403
+  response:
+    content: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Sun, 29 Jan 2023 20:44:55 GMT
+      Server:
+      - gunicorn/19.9.0
+    http_version: HTTP/1.1
+    status_code: 403
+version: 1

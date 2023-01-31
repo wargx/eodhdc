@@ -1,0 +1,55 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://eodhistoricaldata.com/api/eod/MCD.US?api_token=demo&from=2017-01-05&to=2017-01-06&fmt=csv
+  response:
+    body:
+      string: 'Date,Open,High,Low,Close,Adjusted_close,Volume
+
+        2017-01-05,119.34,120.2,119.1,119.7,103.6748,4261100
+
+        2017-01-06,118.93,121.5,118.52,120.76,104.5929,4089200
+
+        '
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Disposition:
+      - attachment; filename="MCD.US.csv";
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Sat, 21 Jan 2023 20:06:20 GMT
+      Server:
+      - nginx/1.19.10
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Page-Speed:
+      - 1.13.35.2-0
+      X-RateLimit-Limit:
+      - '2000'
+      X-RateLimit-Remaining:
+      - '1999'
+    status:
+      code: 200
+      message: OK
+    url: https://eodhistoricaldata.com/api/eod/MCD.US?api_token=demo&from=2017-01-05&to=2017-01-06&fmt=csv
+version: 1

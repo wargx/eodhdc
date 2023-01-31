@@ -1,0 +1,54 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - eodhistoricaldata.com
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: https://eodhistoricaldata.com/api/real-time/MCD.US?api_token=demo&fmt=csv
+  response:
+    content: 'code,timestamp,gmtoffset,open,high,low,close,volume,previousClose,change,change_p
+
+      MCD.US,1674680400,0,270.37,273.07,268.87,273.01,3091850,269.56,3.45,1.2799
+
+      '
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, private
+      Connection:
+      - keep-alive
+      Content-Disposition:
+      - attachment; filename="MCD.US_REALTIME.csv";
+      Content-Type:
+      - application/csv
+      Date:
+      - Wed, 25 Jan 2023 21:42:53 GMT
+      Server:
+      - nginx/1.19.10
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-RateLimit-Limit:
+      - '2000'
+      X-RateLimit-Remaining:
+      - '1983'
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

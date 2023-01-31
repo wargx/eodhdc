@@ -1,0 +1,59 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://eodhistoricaldata.com/api/eod/MCD.US?api_token=demo&from=2017-01-05&to=2017-01-06&fmt=csv
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA0WMuwrCUBBEe79ls+zufZdiCgvBzlbELD5IvIEk+PtetrEZOMyc6W+rwnnWDxxf
+        jyec6hcOY10U9sN7W1YdrnfDSx23SXdCnDrijgIwF3QeWAjFgC0TMDmMyWfwEpmJ/lJsi4zFNYkx
+        GASxh9Qq8hiKFPCUizTtBzy0pM+bAAAA
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Disposition:
+      - attachment; filename="MCD.US.csv";
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Sat, 21 Jan 2023 20:06:03 GMT
+      Server:
+      - nginx/1.19.10
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Page-Speed:
+      - 1.13.35.2-0
+      X-RateLimit-Limit:
+      - '2000'
+      X-RateLimit-Remaining:
+      - '1991'
+    status:
+      code: 200
+      message: OK
+version: 1

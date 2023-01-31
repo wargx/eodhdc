@@ -1,0 +1,70 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - eodhistoricaldata.com
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: https://eodhistoricaldata.com/api/bulk-fundamentals/NASDAQ?api_token=demo&symbols=AAPL.US&limit=10&offset=0&fmt=csv
+  response:
+    content: 'Date,Open,High,Low,Close,Adjusted_close,Volume
+
+      2023-01-03,263.53,264.35,259.51,264.33,264.33,2743800
+
+      2023-01-04,266.25,266.55,262.89,264.39,264.39,2584100
+
+      2023-01-05,264.76,264.76,261.38,262.16,262.16,1945600
+
+      2023-01-06,263.76,269.89,263.39,269.47,269.47,2855400
+
+      2023-01-09,269.93,269.95,266.77,267.25,267.25,2654600
+
+      2023-01-10,266.98,269.1,266.96,268.91,268.91,1718400
+
+      '
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Disposition:
+      - attachment; filename="MCD.US.csv";
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Wed, 25 Jan 2023 21:42:34 GMT
+      Server:
+      - nginx/1.19.10
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Page-Speed:
+      - 1.13.35.2-0
+      X-RateLimit-Limit:
+      - '2000'
+      X-RateLimit-Remaining:
+      - '1998'
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

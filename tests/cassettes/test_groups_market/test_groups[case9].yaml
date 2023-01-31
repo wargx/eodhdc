@@ -1,0 +1,64 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - eodhistoricaldata.com
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: https://eodhistoricaldata.com/api/intraday/AAPL.US?api_token=demo&interval=1m&from=1564752900&to=1564753200&fmt=csv
+  response:
+    content: 'Timestamp,Gmtoffset,Datetime,Open,High,Low,Close,Volume
+
+      1564752900,0,"2019-08-02 13:35:00",205.14,205.37,204.75,204.7683,231517
+
+      1564752960,0,"2019-08-02 13:36:00",204.78,205.38,204.72,205.327,216661
+
+      1564753020,0,"2019-08-02 13:37:00",205.3,205.45,204.96,205.02,176933
+
+      1564753080,0,"2019-08-02 13:38:00",205.01,205.49,204.87,205.4725,160403
+
+      1564753140,0,"2019-08-02 13:39:00",205.455,206.2,205.3909,206.03,233548
+
+      1564753200,0,"2019-08-02 13:40:00",206.03,206.0916,205.39,205.49,224743
+
+      '
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, private
+      Connection:
+      - keep-alive
+      Content-Disposition:
+      - attachment; filename="1m_intraday_data.csv";
+      Content-Type:
+      - application/csv
+      Date:
+      - Wed, 25 Jan 2023 21:42:44 GMT
+      Server:
+      - nginx/1.19.10
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-RateLimit-Limit:
+      - '2000'
+      X-RateLimit-Remaining:
+      - '1990'
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

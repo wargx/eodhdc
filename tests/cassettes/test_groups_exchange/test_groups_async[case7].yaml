@@ -1,0 +1,60 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - eodhistoricaldata.com
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: https://eodhistoricaldata.com/api/screener?api_token=demo&filters=%5B%5B%22market_capitalization%22%2C%22%3E%22%2C1000%5D%2C%5B%22name%22%2C%22match%22%2C%22apple%22%5D%2C%5B%22code%22%2C%22%3D%22%2C%22AAPL%22%5D%5D&sort=market_capitalization.desc&limit=10&offset=0&fmt=csv
+  response:
+    content: '{"data":[{"code":"AAPL","name":"Apple Inc DRC","last_day_data_date":"2023-01-25","adjusted_close":5170,"refund_1d":21,"refund_1d_p":0.41,"refund_5d":392,"refund_5d_p":8.2,"exchange":"BA","currency_symbol":"ARS","market_capitalization":491141187239936,"earnings_share":187.79,"dividend_yield":0.0029,"sector":"Technology","industry":"Consumer
+      Electronics","avgvol_1d":33332,"avgvol_200d":59771.98},{"code":"AAPL","name":"Apple
+      Inc CDR","last_day_data_date":"2023-01-25","adjusted_close":21.33,"refund_1d":-0.11,"refund_1d_p":-0.51,"refund_5d":0.97,"refund_5d_p":4.76,"exchange":"NEO","currency_symbol":"C$","market_capitalization":2972932636672,"earnings_share":1,"dividend_yield":0.0064,"sector":"Technology","industry":"Consumer
+      Electronics","avgvol_1d":121438,"avgvol_200d":83883.72},{"code":"AAPL","name":"Apple
+      Inc","last_day_data_date":"2023-01-26","adjusted_close":143.1,"refund_1d":0.65,"refund_1d_p":0.46,"refund_5d":14.22,"refund_5d_p":11.03,"exchange":"SN","currency_symbol":"$","market_capitalization":2257134288896,"earnings_share":6.11,"dividend_yield":0.0065,"sector":"Technology","industry":"Consumer
+      Electronics","avgvol_1d":156,"avgvol_200d":0},{"code":"AAPL","name":"Apple Inc","last_day_data_date":"2023-01-25","adjusted_close":141.86,"refund_1d":-0.67,"refund_1d_p":-0.47,"refund_5d":6.65,"refund_5d_p":4.92,"exchange":"US","currency_symbol":"$","market_capitalization":2246523224064,"earnings_share":6.11,"dividend_yield":0.0065,"sector":"Technology","industry":"Consumer
+      Electronics","avgvol_1d":65652500,"avgvol_200d":84709886.5},{"code":"AAPL","name":"Apple
+      Inc","last_day_data_date":"2023-01-25","adjusted_close":2666.1499,"refund_1d":-6.5,"refund_1d_p":-0.24,"refund_5d":116.0698,"refund_5d_p":4.55,"exchange":"MX","currency_symbol":"\u20b1","market_capitalization":42377385345024,"earnings_share":114.99,"dividend_yield":0.0067,"sector":"Technology","industry":"Consumer
+      Electronics","avgvol_1d":153909,"avgvol_200d":46141.79}]}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 26 Jan 2023 19:33:54 GMT
+      Server:
+      - nginx/1.19.10
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-RateLimit-Limit:
+      - '2000'
+      X-RateLimit-Remaining:
+      - '1983'
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

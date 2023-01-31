@@ -1,0 +1,29 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://httpbin.org/status/500
+  response:
+    body:
+      string: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Sun, 29 Jan 2023 20:44:48 GMT
+      Server:
+      - gunicorn/19.9.0
+    status:
+      code: 500
+      message: INTERNAL SERVER ERROR
+    url: https://httpbin.org/status/500
+version: 1

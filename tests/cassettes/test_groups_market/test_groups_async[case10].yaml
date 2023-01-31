@@ -1,0 +1,52 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - eodhistoricaldata.com
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: https://eodhistoricaldata.com/api/technical/AAPL.US?api_token=demo&function=stochastic&order=a&from=2020-01-01&to=2020-03-01&fmt=json
+  response:
+    content: '[{"date":"2020-01-28","k_values":69.0281,"d_values":78.3686},{"date":"2020-01-29","k_values":69.4065,"d_values":71.2388},{"date":"2020-01-30","k_values":81.947,"d_values":73.4605},{"date":"2020-01-31","k_values":62.5163,"d_values":71.2899},{"date":"2020-02-03","k_values":42.6522,"d_values":62.3718},{"date":"2020-02-04","k_values":36.7228,"d_values":47.2971},{"date":"2020-02-05","k_values":55.0137,"d_values":44.7962},{"date":"2020-02-06","k_values":76.5379,"d_values":56.0915},{"date":"2020-02-07","k_values":78.0726,"d_values":69.8747},{"date":"2020-02-10","k_values":78.2026,"d_values":77.6044},{"date":"2020-02-11","k_values":70.9195,"d_values":75.7316},{"date":"2020-02-12","k_values":80.2445,"d_values":76.4555},{"date":"2020-02-13","k_values":84.5624,"d_values":78.5755},{"date":"2020-02-14","k_values":91.5073,"d_values":85.4381},{"date":"2020-02-18","k_values":80.8428,"d_values":85.6375},{"date":"2020-02-19","k_values":79.9184,"d_values":84.0895},{"date":"2020-02-20","k_values":74.4634,"d_values":78.4082},{"date":"2020-02-21","k_values":67.08,"d_values":73.8206},{"date":"2020-02-24","k_values":46.3996,"d_values":62.6477},{"date":"2020-02-25","k_values":23.8748,"d_values":45.7848},{"date":"2020-02-26","k_values":14.724,"d_values":28.3328},{"date":"2020-02-27","k_values":7.2151,"d_values":15.2713},{"date":"2020-02-28","k_values":13.6266,"d_values":11.8553}]'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 26 Jan 2023 18:33:22 GMT
+      Server:
+      - nginx/1.19.10
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-RateLimit-Limit:
+      - '2000'
+      X-RateLimit-Remaining:
+      - '1999'
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

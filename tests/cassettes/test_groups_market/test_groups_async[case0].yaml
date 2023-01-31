@@ -1,0 +1,52 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - eodhistoricaldata.com
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: https://eodhistoricaldata.com/api/eod/MCD.US?api_token=demo&period=d&order=a&from=2023-01-01&to=2023-01-10&fmt=json
+  response:
+    content: '[{"date":"2023-01-03","open":263.53,"high":264.35,"low":259.51,"close":264.33,"adjusted_close":264.33,"volume":2743800},{"date":"2023-01-04","open":266.25,"high":266.55,"low":262.89,"close":264.39,"adjusted_close":264.39,"volume":2584100},{"date":"2023-01-05","open":264.76,"high":264.76,"low":261.38,"close":262.16,"adjusted_close":262.16,"volume":1945600},{"date":"2023-01-06","open":263.76,"high":269.89,"low":263.39,"close":269.47,"adjusted_close":269.47,"volume":2855400},{"date":"2023-01-09","open":269.93,"high":269.95,"low":266.77,"close":267.25,"adjusted_close":267.25,"volume":2654600},{"date":"2023-01-10","open":266.98,"high":269.1,"low":266.96,"close":268.91,"adjusted_close":268.91,"volume":1718400}]'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 25 Jan 2023 21:42:49 GMT
+      Server:
+      - nginx/1.19.10
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-RateLimit-Limit:
+      - '2000'
+      X-RateLimit-Remaining:
+      - '1986'
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

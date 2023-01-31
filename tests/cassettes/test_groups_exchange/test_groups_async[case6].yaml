@@ -1,0 +1,73 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - eodhistoricaldata.com
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: https://eodhistoricaldata.com/api/symbol-change-history?api_token=demo&from=2023-01-01&to=2023-12-31
+  response:
+    content: '[{"exchange":"US","old_symbol":"MSPR","new_symbol":"LIFW","company_name":"MSP
+      Recovery, Inc. Class A Common Stock","effective":"2023-01-03"},{"exchange":"US","old_symbol":"MSPRW","new_symbol":"LIFWW","company_name":"MSP
+      Recovery, Inc. Warrant","effective":"2023-01-03"},{"exchange":"US","old_symbol":"MSPRZ","new_symbol":"LIFWZ","company_name":"MSP
+      Recovery, Inc. Warrant","effective":"2023-01-03"},{"exchange":"US","old_symbol":"NILE","new_symbol":"AULT","company_name":"Ault
+      Alliance, Inc. Common Stock","effective":"2023-01-03"},{"exchange":"US","old_symbol":"DNAY","new_symbol":"TBIO","company_name":"Telesis
+      Bio, Inc. Common Stock","effective":"2023-01-04"},{"exchange":"US","old_symbol":"GEHCV","new_symbol":"GEHC","company_name":"GE
+      HealthCare Technologies Inc. Common Stock ","effective":"2023-01-04"},{"exchange":"US","old_symbol":"GLBL","new_symbol":"ALTI","company_name":"Alvarium
+      Tiedemann Holdings, Inc. Class A Common Stock","effective":"2023-01-04"},{"exchange":"US","old_symbol":"GLBLW","new_symbol":"ALTIW","company_name":"Alvarium
+      Tiedemann Holdings, Inc. Warrant","effective":"2023-01-04"},{"exchange":"US","old_symbol":"MPAC","new_symbol":"MMV","company_name":"MultiMetaVerse
+      Holdings Limited Class A Ordinary Share","effective":"2023-01-05"},{"exchange":"US","old_symbol":"MPACW","new_symbol":"MMVWW","company_name":"MultiMetaVerse
+      Holdings Limited Warrant","effective":"2023-01-05"},{"exchange":"US","old_symbol":"LPI","new_symbol":"VTLE","company_name":"Vital
+      Energy, Inc. Common Stock, par value $0.01 per share","effective":"2023-01-09"},{"exchange":"US","old_symbol":"CCNC","new_symbol":"GDC","company_name":"GD
+      Culture Group Limited Common Stock","effective":"2023-01-10"},{"exchange":"US","old_symbol":"MTBC","new_symbol":"CCLD","company_name":"CareCloud,
+      Inc. Common Stock","effective":"2023-01-10"},{"exchange":"US","old_symbol":"MTBCO","new_symbol":"CCLDO","company_name":"CareCloud,
+      Inc. 8.75% Series B Cumulative Redeemable Perpetual Preferred Stock","effective":"2023-01-10"},{"exchange":"US","old_symbol":"MTBCP","new_symbol":"CCLDP","company_name":"CareCloud,
+      Inc. 11% Series A Cumulative Redeemable Perpetual Preferred Stock","effective":"2023-01-10"},{"exchange":"US","old_symbol":"SMFR","new_symbol":"WGS","company_name":"GeneDx
+      Holdings Corp. Class A Common Stock","effective":"2023-01-10"},{"exchange":"US","old_symbol":"SMFRW","new_symbol":"WGSWW","company_name":"GeneDx
+      Holdings Corp. Warrant","effective":"2023-01-10"},{"exchange":"US","old_symbol":"AERC","new_symbol":"MKUL","company_name":"Molekule
+      Group, Inc. Common Stock","effective":"2023-01-12"},{"exchange":"US","old_symbol":"IDRA","new_symbol":"ACGN","company_name":"Aceragen,
+      Inc. Common Stock","effective":"2023-01-18"},{"exchange":"US","old_symbol":"SFET","new_symbol":"ALAR","company_name":"Alarum
+      Technologies Ltd. American Depositary Share","effective":"2023-01-25"},{"exchange":"US","old_symbol":"BCOR","new_symbol":"AVTA","company_name":"Avantax,
+      Inc. Common Stock","effective":"2023-01-26"}]'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 26 Jan 2023 19:33:52 GMT
+      Server:
+      - nginx/1.19.10
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-RateLimit-Limit:
+      - '2000'
+      X-RateLimit-Remaining:
+      - '1984'
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

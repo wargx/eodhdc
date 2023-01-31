@@ -1,0 +1,66 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - eodhistoricaldata.com
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: https://eodhistoricaldata.com/api/search/Apple?api_token=demo&limit=15&bonds_only=0
+  response:
+    content: '[{"Code":"AAPL","Exchange":"US","Name":"Apple Inc","Type":"Common Stock","Country":"USA","Currency":"USD","ISIN":"US0378331005","previousClose":141.86,"previousCloseDate":"2023-01-25"},{"Code":"AAPL","Exchange":"BA","Name":"Apple
+      Inc DRC","Type":"Common Stock","Country":"Argentina","Currency":"ARS","ISIN":"ARDEUT116183","previousClose":5170,"previousCloseDate":"2023-01-25"},{"Code":"0R2V","Exchange":"LSE","Name":"Apple
+      Inc.","Type":"Common Stock","Country":"UK","Currency":"USD","ISIN":"US0378331005","previousClose":142.34,"previousCloseDate":"2023-01-26"},{"Code":"0R2V","Exchange":"IL","Name":"Apple
+      Inc.","Type":"Common Stock","Country":"UK","Currency":"USD","ISIN":"US0378331005","previousClose":142.34,"previousCloseDate":"2023-01-26"},{"Code":"APLE","Exchange":"US","Name":"Apple
+      Hospitality REIT Inc","Type":"Common Stock","Country":"USA","Currency":"USD","ISIN":"US03784Y2000","previousClose":17.37,"previousCloseDate":"2023-01-25"},{"Code":"APC","Exchange":"XETRA","Name":"Apple
+      Inc","Type":"Common Stock","Country":"Germany","Currency":"EUR","ISIN":"US0378331005","previousClose":131.18,"previousCloseDate":"2023-01-26"},{"Code":"APC","Exchange":"F","Name":"Apple
+      Inc","Type":"Common Stock","Country":"Germany","Currency":"EUR","ISIN":"US0378331005","previousClose":131.18,"previousCloseDate":"2023-01-26"},{"Code":"603020","Exchange":"SHG","Name":"Apple
+      Flavor\u0026Fragrance Grp","Type":"Common Stock","Country":"China","Currency":"CNY","ISIN":"CNE1000025D1","previousClose":9.85,"previousCloseDate":"2023-01-20"},{"Code":"AAPL","Exchange":"MX","Name":"Apple
+      Inc","Type":"Common Stock","Country":"Mexico","Currency":"MXN","ISIN":"US0378331005","previousClose":2666.1499,"previousCloseDate":"2023-01-25"},{"Code":"DAAPL-USD","Exchange":"CC","Name":"Apple
+      Tokenized Stock Defichain","Type":"Currency","Country":"Unknown","Currency":"USD","ISIN":null,"previousClose":88.0055187227,"previousCloseDate":"2023-01-25"},{"Code":"AAPL34","Exchange":"SA","Name":"Apple
+      Inc","Type":"Common Stock","Country":"Brazil","Currency":"BRL","ISIN":"BRAAPLBDR004","previousClose":35.89,"previousCloseDate":"2023-01-25"},{"Code":"AAPL","Exchange":"NEO","Name":"Apple
+      Inc CDR","Type":"Common Stock","Country":"Canada","Currency":"CAD","ISIN":"CA03785Y1007","previousClose":21.33,"previousCloseDate":"2023-01-25"},{"Code":"AAPL","Exchange":"MI","Name":"Apple
+      Inc.","Type":"Common Stock","Country":"Italy","Currency":"EUR","ISIN":"US0378331005","previousClose":131.12,"previousCloseDate":"2023-01-26"},{"Code":"3SWP","Exchange":"LSE","Name":"GraniteShares
+      3x Short Apple Daily ETP","Type":"Common Stock","Country":"UK","Currency":"GBX","ISIN":null,"previousClose":19.2,"previousCloseDate":"2023-01-25"},{"Code":"2788","Exchange":"TSE","Name":"Apple
+      International Co Ltd","Type":"Common Stock","Country":"Japan","Currency":"JPY","ISIN":"JP3121170009","previousClose":329,"previousCloseDate":"2023-01-26"}]'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 26 Jan 2023 19:33:41 GMT
+      Server:
+      - nginx/1.19.10
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-RateLimit-Limit:
+      - '2000'
+      X-RateLimit-Remaining:
+      - '1991'
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

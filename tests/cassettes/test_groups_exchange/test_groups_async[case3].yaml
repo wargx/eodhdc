@@ -1,0 +1,114 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - eodhistoricaldata.com
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: https://eodhistoricaldata.com/api/exchange-symbol-list/OTC?api_token=demo&delisted=1&fmt=json
+  response:
+    content: '[{"Code":"AISI","Name":"Aris Industries Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"AJSB1","Name":"Ajs Bancorp Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"AMPY1","Name":"Amplify Energy Corp","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"AMZG","Name":"AMERICAN EAGLE ENERGY Corp","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"BCFN","Name":"Banner Central Finance Co","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"BMTL","Name":"Biomedical Technology Solutions Holdings
+      Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common Stock","Isin":null},{"Code":"BPHCY","Name":"Burns
+      Philp & Co Ltd","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"CCGC","Name":"Ccc Globalcom Corp","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"CECS","Name":"Choices Entertainment Corp","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"CGLD1","Name":"Capital Gold Corp","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"CLRC1","Name":"Colorocs Information Technologies
+      Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common Stock","Isin":null},{"Code":"CLW1","Name":"Clearworks
+      Net Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common Stock","Isin":null},{"Code":"CYXN","Name":"China
+      Yongxin Pharmaceuticals Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"DLNO1","Name":"Delanco Bancorp Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"DNAP","Name":"Dnaprint Genomics Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"DSHL","Name":"DIAS Holding Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"DVNTF","Name":"Diversinet Corp","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"ETSW","Name":"Entrada Software Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"FOFI","Name":"First Opportunity Fund Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"GBLE","Name":"Global 8 Environmental Technologies
+      Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common Stock","Isin":null},{"Code":"GBSV","Name":"Global
+      Industrial Services Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"GSFT","Name":"Global Seafood Technologies Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"HTOG","Name":"Heartland Oil & Gas Corp","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"HVAC","Name":"Peregrine Industries Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"IFLBE","Name":"Infinium Labs Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"IGPAZ","Name":"Israel Growth Partners Acquisition
+      Corp","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common Stock","Isin":null},{"Code":"LMII1","Name":"Lmic
+      Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common Stock","Isin":null},{"Code":"LRCI","Name":"Legal
+      Research Center Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"MLXO","Name":"Michelex Corp","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"MMXT","Name":"MediaMax Technology CORP","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"MRXT","Name":"Marx Toys & Entertainment Corp","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"MTPX","Name":"Medical Technology Ventures Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"NDCP","Name":"National Datacomputer Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"OCSB","Name":"Oswego County Bancorp Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"OPTP","Name":"Opta Corp","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"OSTN","Name":"Old Stone Corp","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"OTTW1","Name":"Ottawa Savings Bancorp Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"PELP","Name":"Pelican Properties International
+      Corp","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common Stock","Isin":null},{"Code":"PLHIE","Name":"Paladin
+      Holdings Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"PNCR","Name":"Pinecrest Investment Group Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"RMKR","Name":"Rainmaker Systems Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"SASN","Name":"International Cosmetics Marketing
+      Co","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common Stock","Isin":null},{"Code":"SBWL","Name":"Skybridge
+      Wireless Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"SEVIE","Name":"Systems Evolution Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"SPDV1","Name":"Spacedev Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"SQUM","Name":"Sequiam Corp","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"SVMI","Name":"SaviCorp","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"TALK1","Name":"Talk America Holdings Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"TAMK","Name":"Tamarak Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"UNSPE","Name":"United Specialties Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"VCSC","Name":"Vocalscape Networks Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"VGTI","Name":"Virtgame Com Corp","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"VROT","Name":"Vitrotech Corp","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"VVVI","Name":"V3 Semiconductor Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"WKOL","Name":"Wlg Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null},{"Code":"WNEA","Name":"Wind Energy America Inc","Country":"USA","Exchange":"OTC","Currency":"USD","Type":"Common
+      Stock","Isin":null}]'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Jan 2023 14:54:49 GMT
+      Server:
+      - nginx/1.19.10
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-RateLimit-Limit:
+      - '2000'
+      X-RateLimit-Remaining:
+      - '1987'
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

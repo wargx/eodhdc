@@ -1,0 +1,60 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - eodhistoricaldata.com
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: https://eodhistoricaldata.com/api/eod-bulk-last-day/NYSE?api_token=demo&symbols=AAPL&fmt=csv
+  response:
+    content: 'Code,Ex,Date,Open,High,Low,Close,Adjusted_close,Volume,Prev_close,Change,Change_%
+
+      AAPL,US,2023-01-25,140.89,142.43,138.81,141.86,141.86,65652500,142.53,-0.67,-0.4701
+
+      '
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Disposition:
+      - attachment; filename="TICKERS_BULK_FORNYSE.csv";
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Thu, 26 Jan 2023 19:33:29 GMT
+      Server:
+      - nginx/1.19.10
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Page-Speed:
+      - 1.13.35.2-0
+      X-RateLimit-Limit:
+      - '2000'
+      X-RateLimit-Remaining:
+      - '1998'
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

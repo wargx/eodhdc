@@ -1,0 +1,61 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - eodhistoricaldata.com
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: https://eodhistoricaldata.com/api/economic-events?api_token=demo&limit=5&offset=0
+  response:
+    content: '[{"type":"Baker Hughes Oil Rig Count","comparison":null,"period":"Feb\/24","country":"US","date":"2023-02-24
+      18:00:00","actual":null,"previous":null,"estimate":null,"change":null,"change_percentage":null},{"type":"Baker
+      Hughes Total Rig Count","comparison":null,"period":"Feb\/24","country":"US","date":"2023-02-24
+      18:00:00","actual":null,"previous":null,"estimate":null,"change":null,"change_percentage":null},{"type":"Budget
+      Balance","comparison":null,"period":"Dec","country":"CA","date":"2023-02-24
+      16:00:00","actual":null,"previous":null,"estimate":null,"change":null,"change_percentage":null},{"type":"Michigan
+      Consumer Sentiment","comparison":null,"period":"Feb","country":"US","date":"2023-02-24
+      15:00:00","actual":null,"previous":null,"estimate":null,"change":null,"change_percentage":null},{"type":"Michigan
+      Current Conditions","comparison":null,"period":"Feb","country":"US","date":"2023-02-24
+      15:00:00","actual":null,"previous":null,"estimate":null,"change":null,"change_percentage":null}]'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 26 Jan 2023 22:02:30 GMT
+      Server:
+      - nginx/1.19.10
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-RateLimit-Limit:
+      - '2000'
+      X-RateLimit-Remaining:
+      - '1987'
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

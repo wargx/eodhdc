@@ -1,0 +1,52 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - eodhistoricaldata.com
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: https://eodhistoricaldata.com/api/real-time/MCD.US?api_token=demo&fmt=json&s=AAPL.US
+  response:
+    content: '[{"code":"MCD.US","timestamp":1674680400,"gmtoffset":0,"open":270.37,"high":273.07,"low":268.87,"close":273.01,"volume":3091850,"previousClose":269.56,"change":3.45,"change_p":1.2799},{"code":"AAPL.US","timestamp":1674680400,"gmtoffset":0,"open":140.84,"high":142.43,"low":138.81,"close":141.86,"volume":64646917,"previousClose":142.53,"change":-0.67,"change_p":-0.4701}]'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 25 Jan 2023 21:42:51 GMT
+      Server:
+      - nginx/1.19.10
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-RateLimit-Limit:
+      - '2000'
+      X-RateLimit-Remaining:
+      - '1984'
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

@@ -1,0 +1,59 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - eodhistoricaldata.com
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: https://eodhistoricaldata.com/api/exchange-details/US?api_token=demo&from=2023-01-01&to=2023-12-31
+  response:
+    content: '{"Name":"USA Stocks","Code":"US","OperatingMIC":"XNAS, XNYS","Country":"USA","Currency":"USD","Timezone":"America\/New_York","ExchangeHolidays":{"0":{"Holiday":"New
+      Year''s Monday","Date":"2023-01-02","Type":"official"},"1":{"Holiday":"Dr. Martin
+      Luther King Jr\u2019s Birthday","Date":"2023-01-16","Type":"official"},"2":{"Holiday":"Washington\u2019s
+      Birthday","Date":"2023-02-20","Type":"official"},"3":{"Holiday":"Good Friday","Date":"2023-04-07","Type":"official"},"4":{"Holiday":"Memorial
+      Day","Date":"2023-05-29","Type":"official"},"5":{"Holiday":"Juneteenth Holiday","Date":"2023-06-16","Type":"official"},"6":{"Holiday":"Independence
+      Day","Date":"2023-07-04","Type":"official"},"7":{"Holiday":"Labour Day","Date":"2023-09-04","Type":"official"},"8":{"Holiday":"Veterans
+      Day (substitute day)","Date":"2023-11-10","Type":"official"},"9":{"Holiday":"Thanksgiving
+      Day","Date":"2023-11-23","Type":"official"},"10":{"Holiday":"Christmas Day","Date":"2023-12-25","Type":"official"}},"isOpen":true,"TradingHours":{"Open":"09:30:00","Close":"16:00:00","OpenUTC":"14:30:00","CloseUTC":"21:00:00","WorkingDays":"Mon,Tue,Wed,Thu,Fri"},"ActiveTickers":52570,"PreviousDayUpdatedTickers":50068,"UpdatedTickers":0}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 26 Jan 2023 19:33:36 GMT
+      Server:
+      - nginx/1.19.10
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-RateLimit-Limit:
+      - '2000'
+      X-RateLimit-Remaining:
+      - '1994'
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

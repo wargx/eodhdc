@@ -1,0 +1,164 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - eodhistoricaldata.com
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: https://eodhistoricaldata.com/api/exchange-symbol-list/OTC?api_token=demo&delisted=1&fmt=csv
+  response:
+    content: 'Code,Name,Country,Exchange,Currency,Type,Isin
+
+      AISI,"Aris Industries Inc",USA,OTC,USD,"Common Stock",
+
+      AJSB1,"Ajs Bancorp Inc",USA,OTC,USD,"Common Stock",
+
+      AMPY1,"Amplify Energy Corp",USA,OTC,USD,"Common Stock",
+
+      AMZG,"AMERICAN EAGLE ENERGY Corp",USA,OTC,USD,"Common Stock",
+
+      BCFN,"Banner Central Finance Co",USA,OTC,USD,"Common Stock",
+
+      BMTL,"Biomedical Technology Solutions Holdings Inc",USA,OTC,USD,"Common Stock",
+
+      BPHCY,"Burns Philp & Co Ltd",USA,OTC,USD,"Common Stock",
+
+      CCGC,"Ccc Globalcom Corp",USA,OTC,USD,"Common Stock",
+
+      CECS,"Choices Entertainment Corp",USA,OTC,USD,"Common Stock",
+
+      CGLD1,"Capital Gold Corp",USA,OTC,USD,"Common Stock",
+
+      CLRC1,"Colorocs Information Technologies Inc",USA,OTC,USD,"Common Stock",
+
+      CLW1,"Clearworks Net Inc",USA,OTC,USD,"Common Stock",
+
+      CYXN,"China Yongxin Pharmaceuticals Inc",USA,OTC,USD,"Common Stock",
+
+      DLNO1,"Delanco Bancorp Inc",USA,OTC,USD,"Common Stock",
+
+      DNAP,"Dnaprint Genomics Inc",USA,OTC,USD,"Common Stock",
+
+      DSHL,"DIAS Holding Inc",USA,OTC,USD,"Common Stock",
+
+      DVNTF,"Diversinet Corp",USA,OTC,USD,"Common Stock",
+
+      ETSW,"Entrada Software Inc",USA,OTC,USD,"Common Stock",
+
+      FOFI,"First Opportunity Fund Inc",USA,OTC,USD,"Common Stock",
+
+      GBLE,"Global 8 Environmental Technologies Inc",USA,OTC,USD,"Common Stock",
+
+      GBSV,"Global Industrial Services Inc",USA,OTC,USD,"Common Stock",
+
+      GSFT,"Global Seafood Technologies Inc",USA,OTC,USD,"Common Stock",
+
+      HTOG,"Heartland Oil & Gas Corp",USA,OTC,USD,"Common Stock",
+
+      HVAC,"Peregrine Industries Inc",USA,OTC,USD,"Common Stock",
+
+      IFLBE,"Infinium Labs Inc",USA,OTC,USD,"Common Stock",
+
+      IGPAZ,"Israel Growth Partners Acquisition Corp",USA,OTC,USD,"Common Stock",
+
+      LMII1,"Lmic Inc",USA,OTC,USD,"Common Stock",
+
+      LRCI,"Legal Research Center Inc",USA,OTC,USD,"Common Stock",
+
+      MLXO,"Michelex Corp",USA,OTC,USD,"Common Stock",
+
+      MMXT,"MediaMax Technology CORP",USA,OTC,USD,"Common Stock",
+
+      MRXT,"Marx Toys & Entertainment Corp",USA,OTC,USD,"Common Stock",
+
+      MTPX,"Medical Technology Ventures Inc",USA,OTC,USD,"Common Stock",
+
+      NDCP,"National Datacomputer Inc",USA,OTC,USD,"Common Stock",
+
+      OCSB,"Oswego County Bancorp Inc",USA,OTC,USD,"Common Stock",
+
+      OPTP,"Opta Corp",USA,OTC,USD,"Common Stock",
+
+      OSTN,"Old Stone Corp",USA,OTC,USD,"Common Stock",
+
+      OTTW1,"Ottawa Savings Bancorp Inc",USA,OTC,USD,"Common Stock",
+
+      PELP,"Pelican Properties International Corp",USA,OTC,USD,"Common Stock",
+
+      PLHIE,"Paladin Holdings Inc",USA,OTC,USD,"Common Stock",
+
+      PNCR,"Pinecrest Investment Group Inc",USA,OTC,USD,"Common Stock",
+
+      RMKR,"Rainmaker Systems Inc",USA,OTC,USD,"Common Stock",
+
+      SASN,"International Cosmetics Marketing Co",USA,OTC,USD,"Common Stock",
+
+      SBWL,"Skybridge Wireless Inc",USA,OTC,USD,"Common Stock",
+
+      SEVIE,"Systems Evolution Inc",USA,OTC,USD,"Common Stock",
+
+      SPDV1,"Spacedev Inc",USA,OTC,USD,"Common Stock",
+
+      SQUM,"Sequiam Corp",USA,OTC,USD,"Common Stock",
+
+      SVMI,SaviCorp,USA,OTC,USD,"Common Stock",
+
+      TALK1,"Talk America Holdings Inc",USA,OTC,USD,"Common Stock",
+
+      TAMK,"Tamarak Inc",USA,OTC,USD,"Common Stock",
+
+      UNSPE,"United Specialties Inc",USA,OTC,USD,"Common Stock",
+
+      VCSC,"Vocalscape Networks Inc",USA,OTC,USD,"Common Stock",
+
+      VGTI,"Virtgame Com Corp",USA,OTC,USD,"Common Stock",
+
+      VROT,"Vitrotech Corp",USA,OTC,USD,"Common Stock",
+
+      VVVI,"V3 Semiconductor Inc",USA,OTC,USD,"Common Stock",
+
+      WKOL,"Wlg Inc",USA,OTC,USD,"Common Stock",
+
+      WNEA,"Wind Energy America Inc",USA,OTC,USD,"Common Stock",
+
+      '
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, private
+      Connection:
+      - keep-alive
+      Content-Disposition:
+      - attachment; filename="OTC_LIST_OF_SYMBOLS.csv";
+      Content-Type:
+      - application/csv
+      Date:
+      - Fri, 27 Jan 2023 14:54:39 GMT
+      Server:
+      - nginx/1.19.10
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-RateLimit-Limit:
+      - '2000'
+      X-RateLimit-Remaining:
+      - '1995'
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

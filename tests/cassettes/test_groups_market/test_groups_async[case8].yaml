@@ -1,0 +1,57 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - eodhistoricaldata.com
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: https://eodhistoricaldata.com/api/intraday/AAPL.US?api_token=demo&interval=1m&from=1564752900&to=1564753200&fmt=json
+  response:
+    content: '[{"timestamp":1564752900,"gmtoffset":0,"datetime":"2019-08-02 13:35:00","open":205.14,"high":205.37,"low":204.75,"close":204.7683,"volume":231517},{"timestamp":1564752960,"gmtoffset":0,"datetime":"2019-08-02
+      13:36:00","open":204.78,"high":205.38,"low":204.72,"close":205.327,"volume":216661},{"timestamp":1564753020,"gmtoffset":0,"datetime":"2019-08-02
+      13:37:00","open":205.3,"high":205.45,"low":204.96,"close":205.02,"volume":176933},{"timestamp":1564753080,"gmtoffset":0,"datetime":"2019-08-02
+      13:38:00","open":205.01,"high":205.49,"low":204.87,"close":205.4725,"volume":160403},{"timestamp":1564753140,"gmtoffset":0,"datetime":"2019-08-02
+      13:39:00","open":205.455,"high":206.2,"low":205.3909,"close":206.03,"volume":233548},{"timestamp":1564753200,"gmtoffset":0,"datetime":"2019-08-02
+      13:40:00","open":206.03,"high":206.0916,"low":205.39,"close":205.49,"volume":224743}]'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 25 Jan 2023 21:43:00 GMT
+      Server:
+      - nginx/1.19.10
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-RateLimit-Limit:
+      - '2000'
+      X-RateLimit-Remaining:
+      - '1978'
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

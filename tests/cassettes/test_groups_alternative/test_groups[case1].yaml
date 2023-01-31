@@ -1,0 +1,52 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - eodhistoricaldata.com
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: https://eodhistoricaldata.com/api/tweets-sentiments?api_token=demo&s=AAPL%2CTSLA&from=2023-01-01&to=2023-01-10
+  response:
+    content: '{"AAPL.US":[{"date":"2023-01-10","count":1461,"normalized":0.1811},{"date":"2023-01-09","count":1820,"normalized":0.1167},{"date":"2023-01-08","count":1257,"normalized":0.1737},{"date":"2023-01-07","count":880,"normalized":0.1481},{"date":"2023-01-06","count":1498,"normalized":0.1254},{"date":"2023-01-05","count":1547,"normalized":0.1442},{"date":"2023-01-04","count":1701,"normalized":0.1336},{"date":"2023-01-03","count":1730,"normalized":0.1202},{"date":"2023-01-02","count":1482,"normalized":0.1262},{"date":"2023-01-01","count":1142,"normalized":0.1764}],"TSLA.US":[{"date":"2023-01-10","count":6392,"normalized":-0.0472},{"date":"2023-01-09","count":5574,"normalized":0.0387},{"date":"2023-01-08","count":5253,"normalized":0.1028},{"date":"2023-01-07","count":4773,"normalized":0.0905},{"date":"2023-01-06","count":6228,"normalized":0.0243},{"date":"2023-01-05","count":5544,"normalized":0.0971},{"date":"2023-01-04","count":6268,"normalized":0.0904},{"date":"2023-01-03","count":6523,"normalized":0.0588},{"date":"2023-01-02","count":5607,"normalized":0.0559},{"date":"2023-01-01","count":3993,"normalized":0.0962}]}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 26 Jan 2023 22:02:22 GMT
+      Server:
+      - nginx/1.19.10
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-RateLimit-Limit:
+      - '2000'
+      X-RateLimit-Remaining:
+      - '1994'
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

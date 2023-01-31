@@ -1,0 +1,388 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - eodhistoricaldata.com
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: https://eodhistoricaldata.com/api/news?api_token=demo&s=AAPL.US&limit=5&offset=0
+  response:
+    content: '[{"date":"2023-01-26T15:20:41+00:00","title":"12 Cheap Blue Chip Stocks
+      To Buy","content":"In this article, we will be taking a look at 12 cheap blue
+      chip stocks to buy. To skip our detailed analysis of the stock market, you can
+      go directly to see the 5 Cheap Blue Chip Stocks To Buy.\n\nThe US stock market
+      has been bearish throughout 2022, with most stocks taking a beating and share
+      prices going on the decline. As a result, many stocks today are trading at attractive
+      valuations, making now the time to buy into major companies while they are trading
+      at a significant discount.\n\nMajor stocks like Apple Inc. (NASDAQ:AAPL), Amazon.com,
+      Inc. (NASDAQ:AMZN), and Microsoft Corporation (NASDAQ:MSFT) have seen significant
+      price declines over 2022 and into 2023, making these companies seem more attractive
+      for investors looking for bargain stocks. The market''s position too is not
+      expected to improve too fast. According to a Barron''s article published this
+      January, Jeremy Grantham, an investor and the co-founder of the investment firm
+      GMO, has recently commented that the stock market is still expected to undergo
+      severe trials. Grantham estimates that the trend line value of the S&P 500 will
+      be around 3,200 by the end of 2023. A drop to 3,200 would represent a 17% fall
+      for the year, and a 20% decline from the S&P 500''s finish on January 24, which
+      stood at 4,019.81.\n\nHowever, the market situation is not entirely bleak. The
+      Dow Jones Industrial Average''s performance so far in 2023 has been optimistic.
+      According to a CNBC article published this January, the Dow gained about 104.40
+      points, or 0.31%, on January 24. This marked the index''s third consecutive
+      day of gains. This performance, despite the slowing US economy, is raising hopes
+      in investor circles that the market can expect to see an improved overall performance
+      in 2023. 12 Cheap Blue Chip Stocks To Buy\n\nPhoto by Austin Distel on Unsplash\n\nOur
+      Methodology\n\nWe scanned Insider Monkey''s database of stock holdings of 920
+      elite hedge funds and picked the top blue chip stocks with PE ratios less than
+      20 as of January 25. The list is ranked in descending order of the PE ratio
+      metric.\n\nStory continues\n\nCheap Blue Chip Stocks To Buy\n\n12. AbbVie Inc.
+      (NYSE:ABBV)\n\nNumber of Hedge Fund Holders: 80\n\nP\/E ratio as of January
+      25: 19.72\n\nAbbVie Inc. (NYSE:ABBV) is a biotech company based in North Chicago,
+      Illinois. The company discovers, develops, manufactures, and sells pharmaceuticals
+      across the globe.\n\nRobyn Karnauskas at Truist holds a Buy rating on AbbVie
+      Inc. (NYSE:ABBV) shares as of January 10.\n\nAccording to financial journalist
+      Edmund Ingham, AbbVie Inc. (NYSE:ABBV) is currently undervalued by 15%-20%.
+      The company''s P\/E ratio falls below 20, signaling that the stock is currently
+      trading at a discount. Truist Analysts have raised their price target on AbbVie
+      Inc. (NYSE:ABBV) shares this January to $180. Compared to the stock''s current
+      price as of January 25, which is $147.69, this represents significant upside
+      potential as well.\n\nThere were 80 hedge funds long AbbVie Inc. (NYSE:ABBV)
+      in the third quarter. Their total stake value was $1.9 billion.\n\nAbbVie Inc.
+      (NYSE:ABBV), like Apple Inc. (NASDAQ:AAPL), Amazon.com, Inc. (NASDAQ:AMZN),
+      and Microsoft Corporation (NASDAQ:MSFT), is a blue-chip stock with a huge hedge
+      fund following, according to our hedge fund data.\n\n11. The Home Depot, Inc.
+      (NYSE:HD)\n\nNumber of Hedge Fund Holders: 89\n\nP\/E ratio as of January 25:
+      19.13\n\nThe Home Depot, Inc. (NYSE:HD) is a home improvement retail company
+      based in Atlanta, Georgia. The company operates renowned Home Depot stores selling
+      building materials, home improvement products, lawn and garden products, and
+      more.\n\nOn January 13, Cowen analyst Max Rakhlenko reiterated an Outperform
+      rating on The Home Depot, Inc. (NYSE:HD) shares.\n\nThe Home Depot, Inc. (NYSE:HD)
+      is currently trading at $317.26 as of January 25. Compared to the Cowen analysts''
+      price target on the stock of $379, this share price is significantly lower.
+      This represents upside potential harbored in the stock. As of this December,
+      The Home Depot, Inc. (NYSE:HD) was trading at a P\/E ratio of 18.87, below its
+      five-year average, which was 21.23. Even the company''s current P\/E ratio of
+      19.13 is below the five-year average.\n\nIn total, 89 hedge funds were long
+      The Home Depot, Inc. (NYSE:HD) in the third quarter. Their total stake value
+      was 5.6 billion.\n\n10. Altria Group, Inc. (NYSE:MO)\n\nNumber of Hedge Fund
+      Holders: 47\n\nP\/E ratio as of January 25: 17.46\n\nAltria Group, Inc. (NYSE:MO)
+      is a tobacco company manufacturing and selling smokable and oral tobacco products
+      in the US. The company is based in Richmond, Virginia.\n\nCompared to its peers,
+      Altria Group, Inc. (NYSE:MO) is competitive in the areas of gross profit margins
+      and dividend yield. As of this January, the company''s gross profit margin is
+      67.7%, higher than competitor Philip Morris'' margin of 65.9%. It also boasts
+      a much higher dividend yield compared to Philip Morris and British American
+      Tobacco. The three companies'' yields stand at 8.3%, 4.9% and 7.1%, respectively.
+      On valuation, Altria Group, Inc. (NYSE:MO) is expected to reach a share price
+      of $55.76 under the current market environment, compared to its current share
+      price of $44.93.\n\nBourgeon Capita was the largest stakeholder in Altria Group,
+      Inc. (NYSE:MO) in the third quarter, holding 542 shares worth about $24.8 million.
+      There were 47 hedge funds long the stock in total, with a total stake value
+      of $1.5 billion.\n\n9. Meta Platforms, Inc. (NASDAQ:META)\n\nNumber of Hedge
+      Fund Holders: 177\n\nP\/E ratio as of January 25: 13.32\n\nMeta Platforms, Inc.
+      (NASDAQ:META) is a communications services company developing products that
+      enable people to connect with friends and family through mobile devices and
+      computers, among more. It is based in Menlo Park, California.\n\nCredit Suisse
+      analyst Stephen Ju holds an Outperform rating on Meta Platforms, Inc. (NASDAQ:META)
+      shares as of January 25.\n\nBy the end of 2022, Meta Platforms, Inc. (NASDAQ:META)
+      has seen a 75% fall in its share price. This has resulted in forecast estimates
+      for the company''s 2023 P\/E standing at 17, significantly lower than the long-run
+      averages. Nivesha Investors considers the company to be undervalued by about
+      18% in the fiscal year of 2023.\n\nMeta Platforms, Inc. (NASDAQ:META) had 177
+      hedge funds long its stock in the third quarter. Their total stake value was
+      $14.2 billion.\n\nWedgewood Partners, an investment management firm, mentioned
+      Meta Platforms, Inc. (NASDAQ:META) in its fourth-quarter 2022 investor letter.
+      Here''s what the firm said:\n\n\u201cMeta Platforms detracted from performance
+      during the quarter and for most of the year. Meta\u2019s advertising revenue
+      grew slightly (currency-adjusted) over 2021 but was up over +60% compared to
+      2019 (pre-Pandemic). The Company reported 2.9 billion \u201cdaily active users
+      (DAUs)\u201d of its Family of Apps (as of September 2022), up nearly +30% from
+      December 2019. Despite these impressive gains, the stock now trades at absolute
+      levels well below where it traded before the Pandemic. Much of the market\u2019s
+      concern revolves around slowing revenue growth and aggressive reinvestment.
+      It is now quite evident that there was a tremendous pull-forward of demand for
+      many businesses and services over the past couple of years. The normalization
+      of revenue growth from that pull-forward is hardly an existential crisis. Further,
+      while Meta\u2019s profit margins have fallen below pre-Pandemic levels, the
+      business likely hired well in excess of what it needed because it assumed the
+      Pandemic induced growth would continue. Meta has plenty of room to moderate
+      its expense base and drive significant value by repurchasing shares at today\u2019s
+      historically depressed multiples.\u201d\n\n8. JPMorgan Chase & Co. (NYSE:JPM)\n\nNumber
+      of Hedge Fund Holders: 110\n\nP\/E ratio as of January 25: 11.45\n\nJPMorgan
+      Chase & Co. (NYSE:JPM) is a diversified banking company, It is based in New
+      York.\n\nKeith Horowitz, an analyst at Citigroup, holds a Buy rating on JPMorgan
+      Chase & Co. (NYSE:JPM) shares as of January 17.\n\nCompared to peers such as
+      Morgan Stanley with a P\/E ratio of about 15.55 as of this January, JPMorgan
+      Chase & Co. (NYSE:JPM) has a P\/E ratio of 11.45. This signifies that the company
+      is operating at a discount relative to its peers. There is also upside potential
+      in the company at present with its current share price of $139.12 compared to
+      Citigroup analysts'' price target on JPMorgan Chase & Co. (NYSE:JPM) being $165
+      as of January 17.\n\nOut of 110 hedge funds long JPMorgan Chase & Co. (NYSE:JPM)
+      in the third quarter, Greenhaven Associates was the largest stakeholder in the
+      company. It held 4.8 million shares. The total stake value in the company was
+      $6.4 billion.\n\n7. Micron Technology, Inc. (NASDAQ:MU)\n\nNumber of Hedge Fund
+      Holders: 74\n\nP\/E ratio as of January 25: 11.09\n\nMicron Technology, Inc.
+      (NASDAQ:MU) is an information technology stock based in Boise, Idaho. The company
+      manufactures and sells memory and storage products worldwide.\n\nAs of December
+      22, BMO Capital''s Ambrish Srivastava holds an Outperform rating on Micron Technology,
+      Inc. (NASDAQ:MU) shares.\n\nAccording to analysts at Deep Tech Insights, Micron
+      Technology, Inc. (NASDAQ:MU) is currently over 46% undervalued. The company
+      also has a P\/E ratio of 11.09. This is significantly lower than its peers like
+      Advanced Micro Devices and NVIDIA Corporation, with P\/E ratios of 47.11 and
+      51.82, respectively.\n\nMicron Technology, Inc. (NASDAQ:MU) was found among
+      the 13F holdings of 74 hedge funds in the third quarter. Their total stake value
+      was $2.5 billion.\n\n6. Bank of America Corporation (NYSE:BAC)\n\nNumber of
+      Hedge Fund Holders: 97\n\nP\/E ratio as of January 25: 10.84\n\nBank of America
+      Corporation (NYSE:BAC) is another diversified banking company on our list. It
+      is based in Charlotte, North Carolina.\n\nDick Bove at Odeon Capital upgraded
+      shares of Bank of America Corporation (NYSE:BAC) from Hold to Buy on January
+      10.\n\nBank of America Corporation (NYSE:BAC) is currently trading at a P\/E
+      of 10.84x, well below the company''s 10-year average of 12x. Between January
+      2022 and January 2023, the company''s share price has dropped by 24%. The company
+      is also cheaper than its competitor, JPMorgan, since Bank of America Corporation
+      (NYSE:BAC) has a P\/E of 10.84 compared to the latter''s P\/E of 11.45.\n\nGreenhaven
+      Associates was also the largest stakeholder in Bank of America Corporation (NYSE:BAC)
+      in the third quarter, holding 1.3 million shares. A total of 97 hedge funds
+      were long the stock. The total stake value in the company was $35.6 billion.\n\nBank
+      of America Corporation (NYSE:BAC), like Apple Inc. (NASDAQ:AAPL), Amazon.com,
+      Inc. (NASDAQ:AMZN), and Microsoft Corporation (NASDAQ:MSFT), is a highly popular
+      blue-chip stock with many hedge funds piling into it today.\n\nClick to continue
+      reading and see 5 Cheap Blue Chip Stocks to Buy.\n\nSuggested articles:\n\n11
+      Most Undervalued Natural Gas Stocks To Buy 10 Dirt Cheap Stocks To Buy 13 Biggest
+      Eyewear Companies in the World\n\nDisclosure: None. 12 Cheap Blue Chip Stocks
+      To Buy is originally published on Insider Monkey.","link":"https:\/\/finance.yahoo.com\/news\/12-cheap-blue-chip-stocks-152041107.html","symbols":["4AB.F","4AB.XETRA","AAPL.US","ABBV.MX","ABBV.US","AMZN.US","BAC.US","FB2A.F","FB2A.XETRA","HD.MX","HD.US","HDI.F","HDI.XETRA","HOME34.SA","JPM.US","META.US"],"tags":["ABBVIE
+      INC","ALTRIA GROUP","APPLE INC","BLUE CHIP STOCKS","HEDGE FUNDS","HOME DEPOT","INC","JEREMY
+      GRANTHAM","MICROSOFT CORPORATION","SHARE PRICE","SHARE PRICES"],"sentiment":{"polarity":0.998,"neg":0.024,"neu":0.89,"pos":0.085}},{"date":"2023-01-26T14:36:09+00:00","title":"30
+      of the World\u2019s Most Valuable Private Companies","content":"In this article,
+      we will discuss the 30 most valuable private companies in the world. If you
+      want to explore similar companies, you can also take a look at 10 of the World''s
+      Most Valuable Private Companies.\n\nA private company is a type of business
+      entity that is owned by private investors or shareholders whose shares of stock
+      are not offered for sale to the public. The primary benefit of operating as
+      a private company is that the owners have more control over the operations and
+      management of the company. Private companies are not required to publicly disclose
+      financial information, which allows them greater flexibility in their operations.
+      This can make it easier for a company to pursue business strategies that may
+      not be feasible for public companies.Additionally, the ownership structure of
+      a private company can be less complicated and more straightforward than that
+      of a public company.\n\nIn some cases, private companies may choose to remain
+      private in order to avoid the costs and hassle of going public. Other private
+      companies may pursue an initial public offering (IPO) in order to raise capital
+      for growth or expansion. However, this process can be costly and time consuming,
+      and may not be suitable for all companies.\n\nThe most valuable private companies
+      in the world are those that have managed to build up a considerable amount of
+      wealth and have been able to maintain their status as privately owned entities.
+      These companies have managed to weather the storms of the global economy and
+      have maintained their success in spite of the difficulties and competition that
+      may come their way.\n\nFrom technology giants to retail companies, these businesses
+      have built up their fortunes and have become some of the most powerful and influential
+      companies in the world. Some of the most valuable private companies in the world
+      are giving competition to mega-caps like Microsoft Corporation (NASDAQ:MSFT),
+      Apple Inc. (NASDAQ:AAPL), and Alphabet Inc. (NASDAQ:GOOG), in terms of revenue.
+      Here, we take a look at some of the most valuable private companies in the world
+      and how they have achieved their success.\n\nStory continues 30 of the World''s
+      Most Valuable Private Companies\n\nOur Methodology\n\nWe sifted through lists
+      of the largest and most valuable private companies in the world that are\u00a0published
+      by credible business magazines such as Forbes and Fortune. We then looked for
+      each company''s financial reports on its official website and other reliable
+      resources.\n\nSince private companies are not required to disclose their financial
+      information publicly, it can become difficult to estimate the true value of
+      the business. There are various ways of valuing a private company. In our case,
+      we used the annual revenue of each company''s most recent fiscal year to value
+      it. These companies are ranked in ascending order of their annual revenue for
+      their most recent fiscal year, sourced from Forbes'' lists and official annual
+      reports.\n\n30 of the World''s Most Valuable Private Companies\n\n30. INEOS
+      Group Limited\n\nAnnual Revenue: $20.38 Billion\n\nINEOS Group Limited is a
+      multinational chemical company headquartered in London, the United Kingdom.
+      It is one of the world\u2019s largest chemical companies and has operations
+      in 29 countries across the world. The company was founded in 1998 and is now
+      among the most valuable privately owned companies in the world. In 2021, the
+      company''s annual revenue crossed $20 billion.\n\nINEOS Group Limited produces
+      a variety of petrochemicals, including petrol, diesel, naphtha, and ethylene,
+      as well as specialty chemicals, such as ethylene oxide, ethylene glycol, propylene
+      glycol, and polypropylene. It also produces polyethylene, polypropylene, and
+      polystyrene plastics.\n\n29. Massachusetts Mutual Life Insurance Company\n\nAnnual
+      Revenue: $30.45 Billion\n\nMassachusetts Mutual Life Insurance Company (MassMutual)
+      is a Fortune 500 company that has been in the life insurance business for well
+      above 150 years. MassMutual offers a wide range of life insurance products,
+      including individual, group, and retirement plans.\u00a0According to the company''s
+      financial report, in 2021, Massachusetts Mutual Life Insurance Company reported
+      an annual revenue of $30.45 billion.\n\nWhile MassMutual is one of the world''s
+      most valuable private companies, some of the world''s most valuable public companies
+      include\u00a0Microsoft Corporation (NASDAQ:MSFT), Apple Inc. (NASDAQ:AAPL),
+      and Alphabet Inc. (NASDAQ:GOOG).\n\n28. Cedar Holdings Group\n\nAnnual Revenue:
+      $33.8 Billion\n\nCedar Holdings Group is a Chinese financial services and asset
+      management company that conducts business through six segments:\u00a0Gongtongyun
+      Supply Chain Group,\u00a0Chemical Industry Group,\u00a0Cedar Culture & Tourism
+      Group,\u00a0King vision Group,\u00a0Community Ecological Operation Group, and\u00a0Financial
+      Services Group. The company was founded in 1997 and is based in Guangzhou, China.
+      The company''s annual revenue in 2021 amounted to $33.8 billion.\n\n27. Reyes
+      Holdings, LLC\n\nAnnual Revenue: $35.3 Billion\n\nReyes Holdings, LLC is a privately
+      held, family-owned business headquartered in Rosemont, Illinois. Founded in
+      1976 by brothers Chris Reyes and Jude Reyes, the company is one of the largest
+      beer distributors in the United States. The company has over 30,000 employees
+      and operates in the United States, Europe and Asia. Reyes Holdings, LLC is among
+      the world''s most valuable private businesses with annual revenue exceeding
+      $35 billion.\n\n26. H-E-B\n\nAnnual Revenue: $38.9 Billion\n\nH-E-B is a regional
+      supermarket chain based in San Antonio, Texas. Founded in 1905 by Florence Butt,
+      the company has grown to become one of the most valuable privately held companies
+      in the world. With over 420 stores in Texas and Mexico, H-E-B is one of the
+      largest grocery store chains in Texas and the United States. The company''s
+      annual revenue is roughly $39 billion.\n\n25. ZF Friedrichshafen AG\n\nAnnual
+      Revenue: $41.32 Billion\n\nZF Friedrichshafen AG is a global automotive and
+      industrial supplier headquartered in Friedrichshafen, Germany. It is among the
+      world''s largest automotive parts suppliers. ZF Friedrichshafen AG produces
+      driveline components, transmissions, chassis components, steering systems, and
+      suspension components for cars, trucks, and other vehicles. It also produces
+      components for industrial, aerospace, and marine applications. ZF Friedrichshafen
+      AG is among the most valuable private companies in the world, with annual revenue
+      crossing $41 billion.\n\n24. Pilot Company\n\nAnnual Revenue: $41.9 Billion\n\nPilot
+      Company is a Tennessee-based convenience store operator.\u00a0Founded in 1958,
+      Pilot Company has grown to become one of the most valuable privately-held companies
+      in the world, with annual revenue exceeding $40 billion. As of 2023, Pilot Company
+      operates over 800 retail and fueling stores.\n\n23. SPAR\n\nAnnual Revenue:
+      $44.45 Billion\n\nSPAR is an international retail chain that was established
+      in the Netherlands in 1932 by Adriaan van Well. Today, the company has over
+      13,600 stores in 48 countries across four continents. SPAR is known for its
+      convenience stores that offer a wide range of products and services. SPAR is
+      one of the most valuable private companies in the world, with annual revenue
+      of more than $44 billion.\n\n22. Mars, Incorporated\n\nAnnual Revenue: $45 Billion\n\nMars,
+      Incorporated is an American global manufacturer of confectionery, pet food,
+      and other food products founded in 1911 and headquartered in McLean, Virginia.
+      The company is one of the most valuable privately held corporations in the world,
+      producing some of the world''s most recognizable brands, such as M&Ms, Snickers,
+      Skittles, and Pedigree. Mars, Incorporated also owns a number of other brands,
+      including Wrigley, Ben''s Original, and Whiskas.\n\n21. Ernst & Young Global
+      Limited\n\nAnnual Revenue: $45.4 Billion\n\nErnst & Young Global Limited (EY)
+      is a multinational professional services firm headquartered in London, England.
+      It is one of the \"Big Four\" accounting firms and is also among the largest
+      professional services network in the world by revenue. Ernst & Young Global
+      Limited\u00a0provides assurance, tax, consulting, and transaction advisory services
+      to clients. Ernst & Young Global Limited is one of the most valuable private
+      companies in the world.\n\n20. Publix Super Markets\n\nAnnual Revenue: $48 Billion\n\nPublix
+      Super Markets is an employee-owned, American supermarket chain with over 1,280
+      stores in the United States. Founded in 1930 by George W. Jenkins, Publix Super
+      Markets is a privately held company and is the largest employee-owned supermarket
+      chain in the United States. The company''s annual revenue borders $50 billion.\n\n19.
+      IKEA\n\nAnnual Revenue: $48.13 Billion\n\nIKEA is a leading global home furnishing
+      company that is known for its stylish yet affordable furniture. Founded in Sweden
+      in 1943 by Ingvar Kamprad, IKEA has become an iconic brand and the world\u2019s
+      largest furniture retailer. IKEA offers a wide variety of furniture, home accessories,
+      and kitchenware at reasonable prices. The company has a unique approach to selling
+      its products, which is centered around self-assembly. This allows customers
+      to save money on labor costs and gives them the satisfaction of putting together
+      their own furniture.\n\n18. Liberty Mutual Insurance Group\n\nAnnual Revenue:
+      $48.2 Billion\n\nLiberty Mutual Insurance Group is a global leader in providing
+      insurance services. Founded in 1912, Liberty Mutual Insurance Group is one of
+      the largest insurance companies in the United States and one of the most valuable
+      private companies in the world, with annual revenue exceeding $48 billion.\n\n17.
+      PricewaterhouseCoopers\n\nAnnual Revenue: $50.29 Billion\n\nPricewaterhouseCoopers
+      (PwC) is one of the world''s leading professional services networks, providing
+      assurance, tax, and consulting services. The company was founded in London in
+      1854 and has since grown to become one of the world''s largest professional
+      services firms, with offices in over 150 countries and employing over 325,000
+      people. PricewaterhouseCoopers has a wide array of services and solutions tailored
+      to the needs of business owners and executives, ranging from financial and risk
+      management to technology and human capital.\n\n16. New York Life Insurance Company\n\nAnnual
+      Revenue: $51.2 Billion\n\nNew York Life Insurance Company is a Fortune 500 mutual
+      life insurance company that is headquartered in New York City. The company was
+      founded in 1845 and is the third-largest life insurer in the United States.
+      As of fiscal 2021, New York Life Insurance Company has $760 billion in assets
+      under management and an annual revenue of $51.2 billion.\n\n15. Nationwide\n\nAnnual
+      Revenue: $52.9 Billion\n\nNationwide is a Columbus-based insurance and financial
+      services company. The company has grown to become one of the largest and most
+      successful insurance companies in the world. Nationwide is recognized as a Fortune
+      100 company and a leading provider of life insurance, auto insurance, homeowners
+      insurance, business insurance and financial services. Nationwide has its headquarters
+      in Columbus, Ohio, and is one of the largest employers in the city.\n\n14. CMA
+      CGM\n\nAnnual Revenue: $56 Billion\n\nCMA CGM is a leading shipping company
+      specializing in container shipping and related services. Founded in 1978, the
+      company is headquartered in Marseille, France, and operates in more than 160
+      countries worldwide. CMA CGM is one of the most valuable privately held companies
+      in the world, with an annual revenue of $56 billion.\n\n13. Deloitte\n\nAnnual
+      Revenue: $59.3 Billion\n\nAccounting giant Deloitte is one of the largest professional
+      services networks in the world. It provides audit, tax, consulting, financial
+      advisory and risk management services to global organizations. Founded in 1845,
+      Deloitte has grown to become a leading professional services provider with more
+      than 415,000 professionals in over 150 countries.\n\n12. ByteDance\n\nAnnual
+      Revenue: $61.7 Billion\n\nChinese internet technology company, ByteDance, is
+      most known for its viral platform TikTok. Founded in 2012, the company has grown
+      to become one of the world\u2019s largest technology companies in the world,
+      by revenue. ByteDance is headquartered in Beijing and has offices around the
+      world, including in the United States, India, and Japan.\n\nSome of the most
+      valuable tech companies in the world include ByteDance, Microsoft Corporation
+      (NASDAQ:MSFT), Apple Inc. (NASDAQ:AAPL), and Alphabet Inc. (NASDAQ:GOOG).\n\n11.
+      State Farm\n\nAnnual Revenue: $82.2 Billion\n\nState Farm is an American insurance
+      and financial services company that is headquartered in Bloomington, Illinois.
+      It is among the largest property and casualty insurers in the United States
+      and is also one of the most valuable private companies in the world. Founded
+      in 1922, State Farm offers a wide range of insurance products, including auto,
+      homeowners, life, health, and business insurance, as well as banking and investment
+      services.\n\nClick to continue reading and see 10 of the World''s Most Valuable
+      Private Companies.\n\nSuggested articles:\n\n25 Biggest New Jersey Companies
+      25 Wealthiest Countries in the World by GDP per capita 14 Small Cap Stocks with
+      Huge Potential\n\nDisclosure: None. 30 of the World''s Most Valuable Private
+      Companies is originally published on Insider Monkey.","link":"https:\/\/finance.yahoo.com\/news\/30-world-most-valuable-private-143609703.html","symbols":["AAPL.MX","AAPL.US","AAPL34.SA","ABEA.F","ABEA.XETRA","ABEC.F","ABEC.XETRA","APC.F","APC.XETRA","GOGL34.SA","GOGL35.SA","GOOG.MI","GOOG.MX","GOOG.US","GOOGL.US","MSF.F"],"tags":["ASSET
+      MANAGEMENT COMPANY","BUSINESS INSURANCE","FINANCIAL SERVICES COMPANY","INSURANCE
+      COMPANY","PRIVATE COMPANIES","PRIVATE INVESTORS","PUBLIC COMPANIES"],"sentiment":{"polarity":1,"neg":0.014,"neu":0.883,"pos":0.103}},{"date":"2023-01-26T14:00:00+00:00","title":"Does
+      This VR News Make Apple Stock a Buy for 2023?","content":"Apple (NASDAQ: AAPL)
+      could have an epic year in 2023. To kick things off, it has already announced
+      its new M2 Pro and M2 Max chips for its perennially popular MacBook laptop lineup,
+      as well as the reintroduced HomePod smart home speaker.\n\nContinue reading","link":"https:\/\/finance.yahoo.com\/m\/020ad0e4-c578-38ac-9564-d95b362bd3a0\/does-this-vr-news-make-apple.html","symbols":["AAPL.MX","AAPL.US","AAPL34.SA","APC.F","APC.XETRA","DIS.MX","DIS.US","DISB34.SA","FB2A.F","FB2A.XETRA","INL.F","INL.XETRA","INTC.MX","INTC.US","ITLC34.SA","META.US"],"tags":["APPLE","APPLE
+      STOCK","APPLE TV","MIXED REALITY"],"sentiment":{"polarity":0.765,"neg":0,"neu":0.844,"pos":0.156}},{"date":"2023-01-26T13:06:00+00:00","title":"If
+      Cash Is King, These Nasdaq Stocks Reign Supreme","content":"Because of that,
+      companies that generate lots of free cash and have cash-rich balance sheets
+      can weather almost any economic storm. Three kings of cash on the Nasdaq Composite
+      Index are Apple (NASDAQ: AAPL), Alphabet (NASDAQ: GOOG)(NASDAQ: GOOGL), and
+      Microsoft (NASDAQ: MSFT). Apple produces massive cash flow.\n\nContinue reading","link":"https:\/\/finance.yahoo.com\/m\/69541834-9082-3301-a19f-6ddeea85275f\/if-cash-is-king%2C-these-nasdaq.html","symbols":["AAPL.MX","AAPL.US","AAPL34.SA","ABEA.F","ABEA.XETRA","ABEC.F","ABEC.XETRA","APC.F","APC.XETRA","GOGL34.SA","GOGL35.SA","GOOG.MI","GOOG.MX","GOOG.US","GOOGL.US"],"tags":["BALANCE
+      SHEET","BALANCE SHEETS","CASH FLOW","CASH IS KING","FREE CASH FLOW","NASDAQ
+      COMPOSITE INDEX"],"sentiment":{"polarity":0.511,"neg":0,"neu":0.936,"pos":0.064}},{"date":"2023-01-26T12:35:41+00:00","title":"Smartphones:
+      better kit could depress long-term growth","content":"Mobile phone operators
+      once successfully instilled the fear of missing out into their customers, encouraging
+      the replacement of smartphones for the latest models every two years. Network
+      phone subsidies helped keep shipments and earnings at global phonemakers strong.
+      Global smartphone shipments dropped 18.3 per cent \u2014 the most on record
+      \u2014 to about 300mn units in the December quarter, according to research group
+      IDC.\n\nContinue reading","link":"https:\/\/finance.yahoo.com\/m\/df8a5888-7421-3024-a899-91e1ac38ac13\/smartphones%3A-better-kit-could.html","symbols":["AAPL.MX","AAPL.US","AAPL34.SA","APC.F","APC.XETRA"],"tags":["GLOBAL
+      ECONOMIC GROWTH","MOBILE PHONE OPERATORS","NETWORK PHONE SUBSIDIES","SMARTPHONES"],"sentiment":{"polarity":0.671,"neg":0.071,"neu":0.799,"pos":0.13}}]'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 26 Jan 2023 22:02:25 GMT
+      Server:
+      - nginx/1.19.10
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-RateLimit-Limit:
+      - '2000'
+      X-RateLimit-Remaining:
+      - '1992'
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

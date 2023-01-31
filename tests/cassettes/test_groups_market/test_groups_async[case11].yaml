@@ -1,0 +1,98 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - eodhistoricaldata.com
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: https://eodhistoricaldata.com/api/technical/AAPL.US?api_token=demo&function=stochastic&order=a&from=2020-01-01&to=2020-03-01&fmt=csv
+  response:
+    content: 'Date,K_values,D_values
+
+      2020-01-28,69.0281,78.3686
+
+      2020-01-29,69.4065,71.2388
+
+      2020-01-30,81.947,73.4605
+
+      2020-01-31,62.5163,71.2899
+
+      2020-02-03,42.6522,62.3718
+
+      2020-02-04,36.7228,47.2971
+
+      2020-02-05,55.0137,44.7962
+
+      2020-02-06,76.5379,56.0915
+
+      2020-02-07,78.0726,69.8747
+
+      2020-02-10,78.2026,77.6044
+
+      2020-02-11,70.9195,75.7316
+
+      2020-02-12,80.2445,76.4555
+
+      2020-02-13,84.5624,78.5755
+
+      2020-02-14,91.5073,85.4381
+
+      2020-02-18,80.8428,85.6375
+
+      2020-02-19,79.9184,84.0895
+
+      2020-02-20,74.4634,78.4082
+
+      2020-02-21,67.08,73.8206
+
+      2020-02-24,46.3996,62.6477
+
+      2020-02-25,23.8748,45.7848
+
+      2020-02-26,14.724,28.3328
+
+      2020-02-27,7.2151,15.2713
+
+      2020-02-28,13.6266,11.8553
+
+      '
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, private
+      Connection:
+      - keep-alive
+      Content-Disposition:
+      - attachment; filename="AAPL.US_stochastic.csv";
+      Content-Type:
+      - application/csv
+      Date:
+      - Thu, 26 Jan 2023 18:33:23 GMT
+      Server:
+      - nginx/1.19.10
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-RateLimit-Limit:
+      - '2000'
+      X-RateLimit-Remaining:
+      - '1998'
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1
