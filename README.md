@@ -1,4 +1,4 @@
-# eodhdc
+# EODHDC
 
 ![license](https://badgen.net/pypi/license/eodhdc)
 ![version](https://badgen.net/pypi/v/eodhdc)
