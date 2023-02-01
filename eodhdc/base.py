@@ -61,11 +61,16 @@ class BaseGroup:
             - "response": raw binary response body
             - "content": decoded as response content type
             - "pandas": pandas dataframe
-        path: additionally save response to file
-          for "response" and "content" will save as is
-          for "pandas" will save in format specified by extension:
-            parquet, pickle, csv, hdf, xlsx, json, html, feather, tex, dta, md
-        :param writer: pandas writer parameters.
+          path: additionally save response to file
+            for "response" and "content" will save as is
+            for "pandas" will save in format specified by extension:
+              parquet, pickle, csv, hdf, xlsx, json, html, feather, tex, dta, md
+        :param writer: pandas writer parameters, see original to_<format> methods for more details.
+          note that some formats may require 3rd-party libraries.
+          additionally writer can be provided with:
+            - change:columns - dict to rename DataFrame columns.
+            - change:reorder - bool to use columns dict for DataFrame columns order.
+            - change:reindex - str or list to set DataFrame columns as index.
         :return: data in requested output format.
         """
         result = None
