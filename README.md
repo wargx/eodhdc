@@ -1,92 +1,253 @@
 # eodhdc
 
+![license](https://badgen.net/pypi/license/eodhdc)
+![version](https://badgen.net/pypi/v/eodhdc)
+![versions](https://badgen.net/pypi/python/eodhdc)
+![coverage](https://raw.githubusercontent.com/wargx/eodhdc/main/reports/coverage.svg)
+![pylint](https://raw.githubusercontent.com/wargx/eodhdc/main/reports/pylint.svg)  
+![pytest:37](https://raw.githubusercontent.com/wargx/eodhdc/main/reports/pytest-py37.svg)
+![pytest:38](https://raw.githubusercontent.com/wargx/eodhdc/main/reports/pytest-py38.svg)
+![pytest:39](https://raw.githubusercontent.com/wargx/eodhdc/main/reports/pytest-py39.svg)
+![pytest:310](https://raw.githubusercontent.com/wargx/eodhdc/main/reports/pytest-py310.svg)
+![pytest:311](https://raw.githubusercontent.com/wargx/eodhdc/main/reports/pytest-py311.svg)
 
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.com/xwd-dev/community/eodhdc.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.com/xwd-dev/community/eodhdc/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+Python client for the EOD Historical Data service REST / WebSockets API and provides various financial data 
+including stock market, splits and dividends, fundamental and economic, exchanges and alternative data feeds.
+Provides synchronous and asynchronous interfaces for HTTP API, asynchronous interface for WebSockets.   
 
 ## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+For normal usage you will need API key which you can get from [here](https://eodhistoricaldata.com/).  
+Supported Python version >= 3.7
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+Package can be installed using pip or poetry:
+```
+pip install eodhdc
+```
+```
+poetry add eodhdc
+```
+To support additional HTTP clients install with extras:
+```
+pip install eodhdc[httpx,aiohttp]
+```
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+## Quickstart
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+Asynchronous usage
+```python
+import asyncio
+from eodhdc import EODHDClient
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+eodhdc = EODHDClient("httpxa", key="demo")
+async with eodhdc.session:
+    results = await asyncio.gather(
+        eodhdc.market.historical("MCD.US", start="2023-01-01", finish="2023-01-10", fmt="csv"),
+        eodhdc.market.historical("MCD.US", start="2023-01-01", finish="2023-01-10", fmt="json")
+    )
+for result in results:
+    print(result)
+```
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+Synchronous usage
+```python
+from eodhdc import EODHDClient
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+eodhdc = EODHDClient("requests", key="demo")
+result = eodhdc.market.historical(
+    "AAPL.US", start="2023-01-01", finish="2023-01-10",
+    fmt="json", output="pandas:./response.csv", writer={"header": False}
+)
+print(result, "\n")
+```
 
-## License
-For open source projects, say how it is licensed.
+WebSockets usage
+```python
+from eodhdc import EODHDWebSockets
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+eodhdws = EODHDWebSockets(buffer=100)
+async with eodhdws.connect("us") as websocket:
+    await eodhdws.subscribe(websocket, ["TSLA", "EURUSD"])
+    async for message in eodhdws.receive(websocket):
+        print(message)
+        if len(eodhdws.buffer) > 5:
+            await eodhdws.unsubscribe(websocket, ["EURUSD"])
+        if len(eodhdws.buffer) > 10:
+            eodhdws.deactivate()
+
+print(eodhdws.buffer)
+```
+
+Also check `playground.py` for quickstart examples. 
+
+## Description
+
+### Main client modules
+
+- EODHDClient: HTTP API client, parameters are:
+  - client: http client module to use.
+  - key: api token.
+  - args: http client `get` args to use across requests.
+
+- EODHDWebSockets: WebSockets API client, parameters are:
+  - key: api token.
+  - buffer: enable and set buffer size.
+  - args: websocket client args.
+
+EODHDClient will automatically determine sync or async http client and provide corresponding interface 
+with same signature, so for example usage can easily be changed:
+
+```python
+eodhdc = EODHDClient("httpxs")
+result = eodhdc.market.historical(...)
+```
+
+```python
+eodhdc = EODHDClient("httpsxa")
+result = await eodhdc.market.historical(...)
+```
+
+Asynchronous version of EODHDClient can be used without context manager, do not forget to call `destroy` 
+method to close session in that case. 
+
+EODHDWebSockets client provides following methods:
+- connect: connect to web-socket endpoint, returns context manager.
+- authorize: check authorization status, do not use directly as it will consume messages. 
+- subscribe: subscribe to the tickers.
+- unsubscribe: unsubscribe from the tickers.
+- receive: receive messages, async generator.
+- activate: activate message loop.
+- deactivate: deactivate message loop.
+
+### HTTP client modules
+
+- requests: default, well known, synchronous module.
+- httpxs: httpx library, synchronous mode, 'httpx' extra.
+- httpxa: httpx library, asynchronous mode, 'httpx' extra.
+- aiohttp: aiohttp library, asynchronous mode, 'aiohttp' extra.
+
+### HTTP API groups
+
+Main HTTP API module contains groups that corresponds to EODHD API groups, and can be accessed like:   
+```eodhdc.market.<method>``` or  ```eodhdc.exchange.<method>```  
+See below mapping for client groups and methods.    
+Visit official API [documentation](https://eodhistoricaldata.com/financial-apis/) for detailed description. 
+
+### HTTP API group methods
+
+In addition to original API parameters each method have:
+- args: override or add http client `get` args.
+- output: output format and optionally file location, format is `<type>[:path]`
+  - types: response type
+    - "response": raw binary response body
+    - "content": decoded as response content type
+    - "pandas": pandas dataframe
+  - path: additionally save response to file
+    - for "response" and "content" will save as is
+    - for "pandas" will save in format specified by extension: 
+      parquet, pickle, csv, hdf, xlsx, json, html, feather, tex, dta, md  
+- writer: pandas writer parameters, see [original](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html) `to_<format>` methods for more details.  
+  note that some formats may require 3rd-party libraries.  
+  additionally writer can be provided with:
+  - change:columns - dict to rename DataFrame columns. 
+  - change:reorder - bool to use columns dict for DataFrame columns order.
+  - change:reindex - str or list to set DataFrame columns as index.
+
+### API support status
+
+API support status and mapping for client groups and methods.   
+
+- [x] HTTP
+  - [x] Stock Market Prices, Splits and Dividends Data API
+    - [x] End-Of-Day Historical Stock Market Data API
+      - market.historical 
+    - [x] Live (Delayed) Stock Prices API
+      - market.delayed
+    - [x] Historical Splits and Dividends API
+      - market.dividends
+      - market.splits
+    - [x] Technical Indicator API
+      - market.indicators
+    - [x] Intraday Historical Data API
+      - market.intraday
+    - [x] Options Data API
+      - market.options
+  - [x] Fundamental and Economic Financial Data API
+    - [x] Fundamental Data for Cryptocurrencies
+      - fundamental.crypto
+    - [x] Historical Market Capitalization API
+      - fundamental.capitalization
+    - [x] Insider Transactions API
+      - fundamental.insider
+    - [x] Fundamental Data: Stocks, ETFs, Mutual Funds, Indices
+      - fundamental.fundamentals
+      - fundamental.bulk
+    - [x] Calendar. Upcoming Earnings, Trends, IPOs and Splits
+      - fundamental.calendar
+    - [x] Bonds Fundamentals and Historical API
+      - fundamental.bonds
+  - [x] Exchanges (Stock Market) Financial APIs
+    - [x] Bulk API for EOD, Splits and Dividends
+      - exchange.bulk
+    - [x] Exchanges API. Get List of Tickers
+      - exchange.exchanges
+      - exchange.tickers
+    - [x] Exchanges API. Trading Hours, Stock Market Holidays, Symbols Change History
+      - exchange.details
+      - exchange.history
+    - [x] Stock Market Screener API
+      - exchange.screener
+    - [x] Search API for Stocks, ETFs, Mutual Funds and Indices
+      - exchange.search
+  - [x] Alternative Data Financial API
+    - [x] Sentiment Data Financial API for News and Tweets
+      - alternative.sentiment
+    - [x] Economic Events Data API
+      - alternative.events
+    - [x] Stock Market and Financial News API
+      - alternative.news
+    - [x] Macro Indicators API
+      - alternative.macroindicators
+    - [x] Macroeconomic Data API
+      - alternative.macroeconomic
+- [x] WebSockets
+  - [x] Stock Market Prices, Splits and Dividends Data API
+    - [x] Real-Time Data API
+
+### Exceptions
+
+Exceptions hierarchy:
+
+- **ClientException**: Base HTTP client exception.
+  - **ClientConnectionTimeout**: Client connection timeout exception. 
+  - **ClientConnectionError**: Client connection error exception. 
+  - **ClientHTTPError**: Client HTTP error exception.
+- **ModuleException**: Base module exception. 
+  - **FileIOError**: File IO exception. 
+  - **UnsupportedContentType**: Unsupported response content exception. 
+  - **UnsupportedExtension**: Unsupported pandas extension exception. 
+  - **JSONDecodeError**: JSON decoding exception. 
+  - **BytesDecodeError**: Bytes decoding exception. 
+  - **PandasRuntimeError**: Pandas runtime exception. 
+  - **UnknownClient**: Unknown client exception. 
+  - **ImproperClient**: Improper client exception.
+- **WebsocketException**: Base websocket exception. 
+  - **WebsocketUnknownEndpoint**: Websocket unknown endpoint exception. 
+  - **WebsocketAuthError**: Websocket authentication exception. 
+  - **WebsocketResponseError**: Websocket response error exception.
+
+## Custom HTTP clients
+
+Additionally, you can provide your own HTTP client by passing its module instead of name string.  
+Module should implement `get` method and `create` and `destroy` can be provided for asynchronous session management.  
+Check modules under `eodhd.clients` for details about required parameters, return data type and exceptions handling.
+
+## Disclaimer
+
+The information in this document is for informational and educational purposes only. Nothing in this document 
+can be construed as financial, legal, or tax advice. The content of this document is solely the opinion of the 
+author, who is not a licensed financial advisor or registered investment advisor. The author is not affiliated 
+as a promoter of EOD Historical Data services. 
+
+This document is not an offer to buy or sell financial instruments. Never invest more than you can afford to 
+lose. You should consult a registered professional advisor before making any investment.
