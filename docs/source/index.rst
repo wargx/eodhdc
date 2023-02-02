@@ -8,7 +8,7 @@ EODHDC
 
 .. include:: ../../README.md
    :parser: myst_parser.sphinx_
-   :start-line: 12
+   :start-line: 1
 
 .. toctree::
    :maxdepth: 2
