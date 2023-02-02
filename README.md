@@ -4,7 +4,8 @@
 ![version](https://badgen.net/pypi/v/eodhdc)
 ![versions](https://badgen.net/pypi/python/eodhdc)
 ![coverage](https://raw.githubusercontent.com/wargx/eodhdc/main/reports/coverage.svg)
-![pylint](https://raw.githubusercontent.com/wargx/eodhdc/main/reports/pylint.svg)  
+![pylint](https://raw.githubusercontent.com/wargx/eodhdc/main/reports/pylint.svg)
+![docs](https://readthedocs.org/projects/eodhdc/badge/?version=stable)  
 ![pytest:37](https://raw.githubusercontent.com/wargx/eodhdc/main/reports/pytest-py37.svg)
 ![pytest:38](https://raw.githubusercontent.com/wargx/eodhdc/main/reports/pytest-py38.svg)
 ![pytest:39](https://raw.githubusercontent.com/wargx/eodhdc/main/reports/pytest-py39.svg)
@@ -14,6 +15,8 @@
 Python client for the EOD Historical Data service REST / WebSockets API and provides various financial data 
 including stock market, splits and dividends, fundamental and economic, exchanges and alternative data feeds.
 Provides synchronous and asynchronous interfaces for HTTP API, asynchronous interface for WebSockets.   
+
+[Documentation](https://eodhdc.readthedocs.io/)
 
 ## Installation
 
