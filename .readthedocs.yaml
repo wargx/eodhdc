@@ -5,7 +5,7 @@ build:
   tools: {python: "3.8"}
   jobs:
     post_install:
-      - python -m pip install --upgrade --no-cache-dir tomli==2.0.1 myst-parser==0.18.1
+      - python -m pip install --upgrade --no-cache-dir tomli==2.0.1 sphinx==5.3.0 sphinx-rtd-theme==1.1.1 myst-parser==0.18.1
 
 sphinx:
   configuration: docs/source/conf.py
