@@ -79,7 +79,7 @@ class BaseGroup:
         :return: data in requested output format.
         """
         result = None
-        output = output.split(":")
+        output = output.split(":", 1)
         extensions = {
             ".parquet": "parquet", ".pickle": "pickle", ".csv": "csv", ".hdf": "hdf",
             ".xlsx": "excel", ".json": "json", ".html": "html", ".feather": "feather",
