@@ -12,6 +12,6 @@ EODHDC
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Package contents
 
    modules

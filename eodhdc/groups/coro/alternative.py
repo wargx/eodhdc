@@ -17,7 +17,7 @@ class AlternativeGroup(BaseGroup):
     ) -> Union[bytes, dict, str, pd.DataFrame]:
         """Financial News Sentiment Data API / Tweets Sentiment Data API.
 
-        :param source: media source, "news" ot "tweets".
+        :param source: media source, "news" or "tweets".
         :param lookup: search query, like s=btc-usd.cc,aapl.
         :param start: period start date, "YYYY-MM-DD".
         :param finish: period end date, "YYYY-MM-DD".

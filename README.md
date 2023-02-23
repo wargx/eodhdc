@@ -5,7 +5,7 @@
 ![versions](https://badgen.net/pypi/python/eodhdc)
 ![coverage](https://raw.githubusercontent.com/wargx/eodhdc/main/reports/coverage.svg)
 ![pylint](https://raw.githubusercontent.com/wargx/eodhdc/main/reports/pylint.svg)
-![docs](https://readthedocs.org/projects/eodhdc/badge/?version=stable)  
+![docs](https://readthedocs.org/projects/eodhdc/badge/?version=stable)<br>
 ![pytest:37](https://raw.githubusercontent.com/wargx/eodhdc/main/reports/pytest-py37.svg)
 ![pytest:38](https://raw.githubusercontent.com/wargx/eodhdc/main/reports/pytest-py38.svg)
 ![pytest:39](https://raw.githubusercontent.com/wargx/eodhdc/main/reports/pytest-py39.svg)
@@ -14,13 +14,11 @@
 
 Python client for the EOD Historical Data service REST / WebSockets API and provides various financial data 
 including stock market, splits and dividends, fundamental and economic, exchanges and alternative data feeds.
-Provides synchronous and asynchronous interfaces for HTTP API, asynchronous interface for WebSockets.   
-
-[Documentation](https://eodhdc.readthedocs.io/)
+Provides synchronous and asynchronous interfaces for HTTP API, asynchronous interface for WebSockets.
 
 ## Installation
 
-For normal usage you will need API key which you can get from [here](https://eodhistoricaldata.com/).  
+For normal usage you will need API key which you can get from [here](https://eodhistoricaldata.com/).<br>
 Supported Python version >= 3.7
 
 Package can be installed using pip or poetry:
@@ -131,9 +129,9 @@ EODHDWebSockets client provides following methods:
 
 ### HTTP API groups
 
-Main HTTP API module contains groups that corresponds to EODHD API groups, and can be accessed like:   
-```eodhdc.market.<method>``` or  ```eodhdc.exchange.<method>```  
-See below mapping for client groups and methods.    
+Main HTTP API module contains groups that corresponds to EODHD API groups, and can be accessed like: <br>
+```eodhdc.market.<method>``` or  ```eodhdc.exchange.<method>```<br>
+See below mapping for client groups and methods.  <br>
 Visit official API [documentation](https://eodhistoricaldata.com/financial-apis/) for detailed description. 
 
 ### HTTP API group methods
@@ -158,7 +156,7 @@ In addition to original API parameters each method have:
 
 ### API support status
 
-API support status and mapping for client groups and methods.   
+API support status and mapping for client groups and methods.
 
 - [x] HTTP
   - [x] Stock Market Prices, Splits and Dividends Data API
@@ -241,8 +239,8 @@ Exceptions hierarchy:
 
 ## Custom HTTP clients
 
-Additionally, you can provide your own HTTP client by passing its module instead of name string.  
-Module should implement `get` method and `create` and `destroy` can be provided for asynchronous session management.  
+Additionally, you can provide your own HTTP client by passing its module instead of name string.<br>
+Module should implement `get` method and `create` and `destroy` can be provided for asynchronous session management.<br>
 Check modules under `eodhd.clients` for details about required parameters, return data type and exceptions handling.
 
 ## Disclaimer
