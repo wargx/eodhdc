@@ -7,27 +7,29 @@ from eodhdc import exceptions
 from eodhdc.base import BaseGroup
 
 exceptions = [
-    (("some/type", b'...'), "content", exceptions.UnsupportedContentType),
-    (("application/json", b'{...}'), "content", exceptions.JSONDecodeError),
-    (("text/html", ''.encode("utf-16")), "content", exceptions.BytesDecodeError),
-    (("text/html", b'a,b'), "content:/xxx/xxx.csv", exceptions.FileIOError),
-    (("text/html", b'a,b'), "pandas:/xxx/xxx.xxx", exceptions.UnsupportedExtension),
-    (("text/html", b'a,b'), "pandas:/xxx/xxx.csv", exceptions.PandasRuntimeError)
+    (("some/type", b'...', {"header": "value"}), "content", exceptions.UnsupportedContentType),
+    (("application/json", b'{...}', {"header": "value"}), "content", exceptions.JSONDecodeError),
+    (("text/html", ''.encode("utf-16"), {"header": "value"}), "content", exceptions.BytesDecodeError),
+    (("text/html", b'a,b', {"header": "value"}), "content:/xxx/xxx.csv", exceptions.FileIOError),
+    (("text/html", b'a,b', {"header": "value"}), "pandas:/xxx/xxx.xxx", exceptions.UnsupportedExtension),
+    (("text/html", b'a,b', {"header": "value"}), "pandas:/xxx/xxx.csv", exceptions.PandasRuntimeError)
 ]
 
 results = [
-    (("application/json", b'{"a":1,"b":2}'), "response", None, b'{"a":1,"b":2}'),
-    (("text/html", b'a,b\n1,2'), "response:/tmp/result1.csv", None, b'a,b\n1,2'),
-    (("application/json", b'{"a":1,"b":2}'), "content", None, {"a": 1, "b": 2}),
-    (("text/html", b'a,b\n1,2'), "content:/tmp/result2.csv", None, "a,b\n1,2"),
-    (("application/json", b'[{"a":1,"b":2}]'), "pandas", {
+    (("application/json", b'{"a":1,"b":2}', {"header": "value"}), "response", None, b'{"a":1,"b":2}'),
+    (("text/html", b'a,b\n1,2', {"header": "value"}), "response:/tmp/result1.csv", None, b'a,b\n1,2'),
+    (("application/json", b'{"a":1,"b":2}', {"header": "value"}), "content", None, {"a": 1, "b": 2}),
+    (("text/html", b'a,b\n1,2', {"header": "value"}), "content:/tmp/result2.csv", None, "a,b\n1,2"),
+    (("application/json", b'[{"a":1,"b":2}]', {"header": "value"}), "pandas", {
             "change:columns": {"b": "cb", "a": "ca"}, "change:reorder": True, "change:reindex": "cb"
         }, pd.read_json('[{"ca":1,"cb":2}]').set_index("cb")),
-    (("text/html", b'a,b\n1,2'), "pandas:/tmp/result3.csv", {
+    (("text/html", b'a,b\n1,2', {"header": "value"}), "pandas:/tmp/result3.csv", {
             "change:columns": {"b": "cb", "a": "ca"}, "change:reorder": True, "change:reindex": "cb"
         }, pd.read_csv(io.StringIO("ca,cb\n1,2")).set_index("cb")),
-    (("text/html", b'a,b\n1,2'), "pandas:/tmp/result3.json", None, pd.read_csv(io.StringIO("a,b\n1,2"))),
-    (("text/html", b'a,b\n1,2'), "pandas:/tmp/result3.html", None, pd.read_csv(io.StringIO("a,b\n1,2")))
+    (("text/html", b'a,b\n1,2', {"header": "value"}), "pandas:/tmp/result3.json", None,
+        pd.read_csv(io.StringIO("a,b\n1,2"))),
+    (("text/html", b'a,b\n1,2', {"header": "value"}), "pandas:/tmp/result3.html", None,
+        pd.read_csv(io.StringIO("a,b\n1,2")))
 ]
 
 
@@ -69,3 +71,4 @@ def test_base_process(response, output, writer, result):
     if "." in output:
         assert os.path.exists(parts[1])
         os.remove(parts[1])
+    assert group.headers

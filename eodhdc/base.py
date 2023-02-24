@@ -24,6 +24,7 @@ class BaseGroup:
         self.session = session
         self.args = args or {}
         self.base = "https://eodhistoricaldata.com/api"
+        self.headers = {}
 
     def prepare(self, source: dict, exclude: list) -> dict:
         """Prepare parameters dictionary.
@@ -48,9 +49,8 @@ class BaseGroup:
         return result
 
     # pylint: disable=too-many-branches,too-many-statements
-    @staticmethod
     def process(
-        response: Tuple[str, bytes], output: str = "content", writer: dict = None
+        self, response: Tuple[str, bytes, dict], output: str = "content", writer: dict = None
     ) -> Union[bytes, dict, str, pd.DataFrame]:
         """Process response data.
 
@@ -80,6 +80,7 @@ class BaseGroup:
         """
         result = None
         output = output.split(":", 1)
+        self.headers = response[2]
         extensions = {
             ".parquet": "parquet", ".pickle": "pickle", ".csv": "csv", ".hdf": "hdf",
             ".xlsx": "excel", ".json": "json", ".html": "html", ".feather": "feather",

@@ -15,7 +15,7 @@ def get(url: str, params: dict, **kwargs) -> Tuple[str, bytes]:
     try:
         response = requests.get(url, params, **kwargs)
         response.raise_for_status()
-        return response.headers["content-type"].split(";")[0], response.content
+        return response.headers["content-type"].split(";")[0], response.content, response.headers
     except requests.exceptions.HTTPError as ex:
         raise exceptions.ClientHTTPError(ex.response.status_code, ex) from None
     except requests.exceptions.Timeout as ex:

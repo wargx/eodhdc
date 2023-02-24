@@ -111,6 +111,14 @@ result = await eodhdc.market.historical(...)
 Asynchronous version of EODHDClient can be used without context manager, do not forget to call `destroy` 
 method to close session in that case. 
 
+You can also get response headers from last request, for example to check `X-RateLimit-Limit` 
+and `X-RateLimit-Remaining` values by using `headers` property:
+
+```python
+result = await eodhdc.market.historical(...)
+print(eodhdc.market.headers["X-RateLimit-Remaining"])
+```
+
 EODHDWebSockets client provides following methods:
 - connect: connect to web-socket endpoint, returns context manager.
 - authorize: check authorization status, do not use directly as it will consume messages. 

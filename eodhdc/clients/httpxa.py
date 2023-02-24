@@ -17,7 +17,7 @@ async def get(session: httpx.AsyncClient, url: str, params: dict, **kwargs) -> T
     try:
         response = await session.get(url, params=params, **kwargs)
         response.raise_for_status()
-        return response.headers["content-type"].split(";")[0], response.content
+        return response.headers["content-type"].split(";")[0], response.content, response.headers
     except httpx.HTTPStatusError as ex:
         raise exceptions.ClientHTTPError(ex.response.status_code, ex) from None
     except httpx.TimeoutException as ex:

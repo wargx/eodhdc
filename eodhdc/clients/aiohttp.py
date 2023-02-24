@@ -17,7 +17,7 @@ async def get(session: aiohttp.ClientSession, url: str, params: dict, **kwargs) 
     try:
         async with session.get(url, params=params, **kwargs) as response:
             response.raise_for_status()
-            return response.content_type, await response.content.read()
+            return response.content_type, await response.content.read(), response.headers
     except aiohttp.ClientResponseError as ex:
         raise exceptions.ClientHTTPError(ex.status, ex.message) from None
     except asyncio.TimeoutError as ex:
