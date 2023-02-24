@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "EODHDC"
-version = "0.9.1"
+version = "1.1.0"
 description = "EOD Historical Data API Python Client"
 authors = ["Warg <warg.silencer@gmail.com>"]
 license = "MIT"
